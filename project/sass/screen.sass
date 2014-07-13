@@ -5,7 +5,7 @@
 $topbarHeight: 33px
 
 .login_page
-  background: url(../images/background_0.png)
+  background: url(../images/background_0.png) #cef1fd
 .bg
   background: url(../images/background_1.png) #cef1fd
 %primary_color, .primary_color
@@ -243,3 +243,62 @@ body
     @extend %fl
 form
   @extend %clearfix
+//login page
+.login_page
+  .wrap
+.banner
+  +size(960px 325px)
+  background: url('../images/banner_login.png') no-repeat
+  margin-top: 60px
+  margin-bottom: -125px
+  padding-bottom: 125px
+  @extend %center-block
+.login_block
+  @extend %center-block
+  width: 480px
+  .input
+    +size(239px 26px)
+    border: solid 1px #4a4a4a
+    padding: 5px
+.control-group
+  margin-bottom: 12px
+.control-label
+  @extend %fl
+  width: 125px
+  text-align: right
+  display: block
+  font-size: 18px
+  line-height: 36px
+  color: #567277
+.controls
+  margin-left: 135px
+.forgotpwd
+  font-size: 14px
+  color: #88b638
+  text-decoration: none
+  padding: 10px 25px 10px 10px
+  background: url(../images/list_style.png) right center no-repeat
+.controls
+  .verification
+    padding: 0
+    img
+      margin-left: 0
+      display: block
+      // @extend %clearfix
+    input
+      margin-left: 0
+      +size(134px 26px)
+      padding-right: 5px
+      padding-left: 5px
+      font-size: 18px
+.btn_login
+  +reset-box-model
+  +size(125px 70px)
+  @extend %ir
+  background: url(../images/btn_login_off.png) center no-repeat
+  cursor: pointer
+  margin-left: 30px
+  margin-top: -10px
+  &:hover
+    background-image: url(../images/btn_login_on.png)
+

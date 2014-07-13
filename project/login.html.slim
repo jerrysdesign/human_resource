@@ -1,0 +1,38 @@
+doctype html
+/![if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/![if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/![if IE 8] <html class="no-js lt-ie9"
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title
+    meta content="" name="description" 
+    meta content="width=device-width, initial-scale=1" name="viewport" 
+    /! Place favicon.ico and apple-touch-icon.png in the root directory
+    link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"
+  body.login_page
+    /![if lt IE 7]
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    /!content start
+    .wrap
+      .banner
+      .login_block
+        form
+          .control-group
+            label.control-label 使用者名稱:
+            .controls
+              input.input type="text" 
+          .control-group
+            label.control-label 使用者密碼:
+            .controls
+              input.input type="password" 
+              a.forgotpwd href='javascript:;' 忘記密碼
+          .control-group
+            .controls
+              .verification
+                img src='images/attic/verification.png'
+                input type="text" placeholder='輸入驗證碼'
+              button.btn_login type="submit"  登入
