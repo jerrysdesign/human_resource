@@ -13,22 +13,104 @@ html.no-js
     meta content="width=device-width, initial-scale=1" name="viewport" 
     /! Place favicon.ico and apple-touch-icon.png in the root directory
     link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"
-  body
+  body.bg
     /![if lt IE 7]
-      p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    /! Add your site or application content here
-    p Hello world! This is HTML5 Boilerplate.
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    
+    /!content start
+    .wrap
+      .shadow
+        .wrap
+          .header
+            .topbar
+              ul
+                li: a href='javascript:;' 網站地圖
+                li: a href='javascript:;' 回首頁
+                li.t-search
+                  form
+                    input type='text'
+                    a.search_btn herf='javascript:document.forms[0].submit()'
+            .logo
+              h1 教育部國民中小學人力資源網
+          .main style='margin-top:-48px'
+            .left-side
+              .box.login
+                h3 會員登入
+                form
+                  input
+                  input
+                img src='images/attic/verification.png'
+
+              .box.media
+                h3 影音專區
+                img src='images/media.png'
+
+            .content
+              .block.news
+                h3 最新消息
+                .section
+                  ul.list-title
+                    li.tit 標題
+                    li.tie 時間
+                  -3.times do
+                    ul.list-con
+                      li.tit
+                        a href='javascript:;' =zh_lorem_words 25
+                      li.tie
+                        a href='javascript:;' =lorem_date("%Y/%m/%d", 2014..2014)
+                  a.more href='javascript:;' 更多最新消息
+              .block.pub
+                h3 縣市公告
+                .section
+                  ul.list-title
+                    li.tit 標題
+                    li.tie 時間
+                  -3.times do
+                    ul.list-con
+                      li.tit
+                        a href='javascript:;' =zh_lorem_words 25
+                      li.tie
+                        a href='javascript:;' =lorem_date("%Y/%m/%d", 2014..2014)
+                  a.more href='javascript:;' 更多最新公告
+            ul.quick_link
+              li.q0
+                a href='#' 新手上路
+              li.q1
+                a href='#' 檔案下載
+              li.q2
+                a href='#' 操作手冊
+              li.q3
+                a href='#' 法令規章
+              li.q4
+                a href='#' 聯絡我們
+          .footer
+            .copyright
+              p
+                | 歡迎蒞臨「國民中小學人力資源網網站」
+                a href='javascript:;' 【隱私權政策】
+                a href='javascript:;' 【網路安全政策】
+                | 瀏覽人次:
+                span 953
+                | 、建議使用Internet Explorer5.0、Netscape6.0以上版本，瀏覽器及解析度1024*768
+                | ◎本站如有任何建議請告知：系統管理者
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" 
     javascript:
       window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
     /! Google Analytics: change UA-XXXXX-X to be your site's ID.
     javascript:
-      window.jQuery || document.write('<\/script>')
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
 
 
