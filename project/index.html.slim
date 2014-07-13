@@ -16,7 +16,6 @@ html.no-js
   body.bg
     /![if lt IE 7]
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    
     /!content start
     .wrap
       .shadow
@@ -37,14 +36,15 @@ html.no-js
               .box.login
                 h3 會員登入
                 form
-                  input
-                  input
-                img src='images/attic/verification.png'
-
+                  input type="text" placeholder='請輸入您的帳號'
+                  input type="password" placeholder='請輸入您的密碼'
+                  .verification
+                    img src='images/attic/verification.png'
+                    input type="text" placeholder='輸入驗證碼'
+                  input type='submit'
               .box.media
                 h3 影音專區
                 img src='images/media.png'
-
             .content
               .block.news
                 h3 最新消息

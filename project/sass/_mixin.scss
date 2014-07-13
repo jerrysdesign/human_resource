@@ -65,6 +65,17 @@ $gray : #cccccc;
   @include clearfix(false);
 }
 
+// Placeholder text
+// -------------------------
+@mixin placeholder($color: $placeholderText) {
+  :-moz-placeholder {
+    color: $color;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
 // input, select, textarea的基礎樣式
 // border，padding
 %simple-form-basic{

@@ -16,7 +16,9 @@ $topbarHeight: 33px
   float: right
 %fl, .fl
   float: left
-
+.clearfix
+  @extend %clearfix
++placeholder($color: #51bfce) 
 body
   font-family: 微軟正黑體, 'Microsoft JhengHei', Helvetica, Tahoma, Verdana, sans-serif
   font-size: 75% /*12px*/
@@ -62,7 +64,7 @@ body
     +size(125px 20px)
     input
       @extend %fl
-    input[type="text"]
+    input[type='text']
       +reset-box-model
       background: transparent
       height: 20px
@@ -204,4 +206,40 @@ body
   &.media
     h3
       background-image: url(../images/box_title_login.png)
-
+//.box.login
+.login
+  input[type='text'],input[type='password']
+    +size(138px 25px)
+    padding: 2px 10px
+    border: solid 1px #51bfce
+    margin-bottom: 6px
+    @extend %center-block
+    font-size: 16px
+    color: #51bfce
+    background: #FFF url(../images/arrow.png) 130px center no-repeat
+    &:focus
+      background-image: none
+  input[type='submit']
+    +reset-box-model
+    text-indent: -9999px
+    background: transparent
+    +size(56px 24px)
+    margin-right: 10px
+    background: url(../images/btn_login.png) no-repeat
+    cursor: pointer
+    @extend %fr
+    &:focus
+.verification
+  +placeholder($color: #f1417f)
+  img
+    margin: 10px auto
+  padding: 10px 10px 0
+  text-align: center
+  input[type='text']
+    +size(83px 18px)
+    color: #f1417f
+    border: solid 1px #f1417f
+    margin-left: 14px
+    @extend %fl
+form
+  @extend %clearfix
