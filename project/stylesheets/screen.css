@@ -22,6 +22,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .clearfix:before, .main:before, .section:before, .list-title:before, .list-con:before, form:before, .clearfix:after, .main:after, .section:after, .list-title:after, .list-con:after, form:after { content: ""; display: table; }
 .clearfix:after, .main:after, .section:after, .list-title:after, .list-con:after, form:after { clear: both; }
 
+img { max-width: 100%; }
+
 .login_page { background: url(../images/background_0.png) #cef1fd; }
 
 .bg { background: url(../images/background_1.png) #cef1fd; }
@@ -30,7 +32,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .copyright, .text_center { text-align: center; }
 
-.topbar ul, .block .more, .quick_link, .login input[type='submit'], .fr { float: right; }
+.topbar ul, .right-side, .right-side > *, .block .more, .login input[type='submit'], .fr { float: right; }
 
 .topbar li, .topbar .t-search input, .left-side, .left-side + .content, .list-title li, .list-con li, .verification input[type='text'], .control-label, .fl { float: left; }
 
@@ -65,6 +67,10 @@ body { font-family: 微軟正黑體, "Microsoft JhengHei", Helvetica, Tahoma, Ve
 
 .left-side + .content { margin: 0 30px; }
 
+.right-side { width: 165px; }
+.right-side > .box { width: 165px; }
+.right-side > .box > h3 { width: 165px; }
+
 .block + .block { margin-top: 15px; }
 
 .section { -webkit-box-shadow: 2px 3px rgba(204, 204, 204, 0.5); -moz-box-shadow: 2px 3px rgba(204, 204, 204, 0.5); box-shadow: 2px 3px rgba(204, 204, 204, 0.5); border: solid 1px #c2c2c2; border-top: none; min-height: 170px; }
@@ -86,7 +92,7 @@ body { font-family: 微軟正黑體, "Microsoft JhengHei", Helvetica, Tahoma, Ve
 .block.pub h3 { background-image: url(../images/block_title_pub.png); }
 .block .more { color: #f1417f; background-image: url(../images/more.png); background-position: right center; background-repeat: no-repeat; text-decoration: none; padding-right: 40px; line-height: 40px; display: block; margin-right: 20px; }
 
-.quick_link { width: 165px; margin-top: 38px; }
+.quick_link { width: 165px; margin-top: 38px; margin-bottom: 20px; }
 .quick_link li + li { margin-top: 14px; }
 
 .q0 a, .q1 a, .q2 a, .q3 a, .q4 a { display: block; background-image: url(../images/quick_link.png); height: 38px; width: 165px; }
